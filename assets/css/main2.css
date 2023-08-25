@@ -1397,12 +1397,28 @@ a {
   display: none;
 }
 
+@media (max-width: 844px) {
+.music-card {
+  margin: 100px auto;
+  background: #ffffff;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 8px;
+  top: 320px;
+  transform: scale(1.7);
+}
+}
+
+
 /*********************************************************************/
 .text {
   font-weight: 100;
   font-size: 25px;
   color: #fafafa;
-  margin-top: -150px;
+  margin-top: -180px;
       text-align: center;
 }
 .dud {
@@ -1506,7 +1522,7 @@ a {
 }
     }
 
-@media (max-width: 768px) {
+@media (max-width: 844px) {
 .form-desktop {
 #container #score {
   position: absolute;
@@ -1531,7 +1547,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 88%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1994,12 +2010,12 @@ background: linear-gradient(0, #000000, #18191c91);
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 844px) {
   .card-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: translate(-50%, -50%) scale(1.4);
     margin-top: -50px; 
   }
 
