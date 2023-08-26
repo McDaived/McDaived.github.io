@@ -379,7 +379,7 @@ svg path{
 
 /*********************************************************************/
 
-.form-desktop {
+
 .tip-button {
   background: none;
   border: 0;
@@ -574,10 +574,10 @@ svg path{
     transform: rotate();
   }
 }
-}
+
 
 @media (max-width: 779px) {
-.form-desktop {
+
 .tip-button {
   background: none;
   border: 0;
@@ -771,7 +771,7 @@ svg path{
     transform: rotate();
   }
 }
-            }
+            
 }
 
 
@@ -780,7 +780,7 @@ svg path{
 /*********************************************************************/
 
 
-.form-desktop {
+
 .switch {
   height: 22px;
   display: block;
@@ -810,10 +810,10 @@ svg path{
   border-radius: 20px;
 }
 .switch input + span:before {
-  top: 3px;
+  top: 2px;
   left: 0;
-  width: 36px;
-  height: 20px;
+  width: 39px;
+  height: 22px;
   border: 2px solid #3F4656;
   transition: all 0.3s ease;
 }
@@ -821,7 +821,7 @@ svg path{
   width: 16px;
   height: 16px;
   background: #2F3545;
-  top: 7px;
+  top: 5px;
   left: 3px;
   transition: all 0.45s ease;
 }
@@ -845,7 +845,7 @@ svg path{
   position: absolute;
   z-index: 1;
   left: 5px;
-  top: 8.5px;
+  top: 7px;
   display: block;
   transform-origin: 50% 50%;
   -webkit-backface-visibility: hidden;
@@ -964,10 +964,10 @@ html {
 }
 
 
-}
+
 
 @media (max-width: 779px) {
-.form-desktop {
+
 
 .switch {
   height: 22px;
@@ -1001,9 +1001,9 @@ html {
 .switch input + span:before {
   top: -1px;
   left: 0px;
-  width: 38px;
+  width: 39px;
   height: 22px;
-  border: 1px solid #3F4656;
+  border: 2px solid #3F4656;
   transition: all 0.3s ease;
     top: 50px;
     left: 100px;
@@ -1015,7 +1015,7 @@ html {
   top: 2px;
   left: 3px;
   transition: all 0.45s ease;
-    top: 54px;
+    top: 53px;
     left: 103px;
 }
 .switch input + span + svg {
@@ -1037,7 +1037,7 @@ html {
   height: 12px;
   position: absolute;
   z-index: 1;
-  top: 55.8px;
+  top: 55px;
   left: 105px;
   display: block;
   transform-origin: 50% 50%;
@@ -1157,7 +1157,7 @@ html {
   box-sizing: border-box;
 }
 
-}
+
 }
 
 /*********************************************************************/
