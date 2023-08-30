@@ -2343,7 +2343,7 @@ div > span {
     
 #animatedImage {
         position: absolute;
-        top: -10000px; 
+        top: -173px; 
         display: none;
           transform: scale(1.79);
     }
