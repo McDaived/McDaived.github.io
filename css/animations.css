@@ -1,0 +1,179 @@
+/* ─── Fade ─── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ─── Slide ─── */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Glitch ─── */
+@keyframes glitch {
+  0%, 100% { transform: translate(0);        clip-path: none; }
+  20%       { transform: translate(-2px, 1px); clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%); }
+  40%       { transform: translate(2px, -1px); clip-path: polygon(0 40%, 100% 40%, 100% 70%, 0 70%); }
+  60%       { transform: translate(-1px, 2px); clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%); }
+  80%       { transform: translate(1px, -2px); clip-path: none; }
+}
+
+/* ─── Liquid morph (for nav logo) ─── */
+@keyframes liquidMorph {
+  0%, 100% { filter: url(#liquid) blur(0px); }
+  50%       { filter: url(#liquid) blur(0.3px); }
+}
+
+/* ─── Teleport dissolve ─── */
+@keyframes teleportOut {
+  0%   { opacity: 1;   transform: scale(1);    filter: blur(0px)  brightness(1); }
+  40%  { opacity: 0.5; transform: scale(1.02); filter: blur(5px)  brightness(1.8); }
+  100% { opacity: 0;   transform: scale(1.06); filter: blur(14px) brightness(2.5); }
+}
+
+@keyframes teleportIn {
+  0%   { opacity: 0;   transform: scale(0.94); filter: blur(14px) brightness(2.5); }
+  60%  { opacity: 0.6; transform: scale(0.99); filter: blur(5px)  brightness(1.6); }
+  100% { opacity: 1;   transform: scale(1);    filter: blur(0px)  brightness(1); }
+}
+
+/* ─── Pulse ─── */
+@keyframes pulse {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%       { transform: scale(1.05); opacity: 0.8; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240, 240, 240, 0); }
+  50%       { box-shadow: 0 0 20px 5px rgba(240, 240, 240, 0.12); }
+}
+
+/* ─── Float ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes floatRotate {
+  0%   { transform: translateY(0)    rotate(0deg); }
+  33%  { transform: translateY(-8px) rotate(2deg); }
+  66%  { transform: translateY(-4px) rotate(-1deg); }
+  100% { transform: translateY(0)    rotate(0deg); }
+}
+
+/* ─── Typing cursor blink ─── */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ─── Bounce (scroll arrow) ─── */
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ─── Shimmer (skeleton loading) ─── */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+
+/* ─── Ripple ─── */
+@keyframes ripple {
+  0%   { transform: scale(0); opacity: 1; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+/* ─── 3D flip (language toggle) ─── */
+@keyframes flip3d {
+  0%   { transform: rotateY(0deg); }
+  49%  { transform: rotateY(90deg);  opacity: 0; }
+  51%  { transform: rotateY(-90deg); opacity: 0; }
+  100% { transform: rotateY(0deg);   opacity: 1; }
+}
+
+/* ─── Spin ─── */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ─── Gradient border rotate ─── */
+@keyframes borderRotate {
+  from { --border-angle: 0deg; }
+  to   { --border-angle: 360deg; }
+}
+
+/* ─── Avatar pixel formation (hero entry) ─── */
+@keyframes avatarReveal {
+  0%   {
+    opacity: 0;
+    filter: blur(20px) saturate(0);
+    transform: scale(0.88);
+    clip-path: circle(20% at 50% 50%);
+  }
+  40%  {
+    opacity: 0.6;
+    filter: blur(6px) saturate(0.4);
+    transform: scale(1.03);
+    clip-path: circle(42% at 50% 50%);
+  }
+  70%  {
+    opacity: 0.9;
+    filter: blur(1.5px) saturate(0.8);
+    transform: scale(1.01);
+    clip-path: circle(49% at 50% 50%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0) saturate(1);
+    transform: scale(1);
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+/* ─── Avatar ring sweep (born-from-ring effect) ─── */
+@keyframes ringExpand {
+  0%   { transform: scale(0.5); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* ─── Social icon ripple on click ─── */
+@keyframes socialRipple {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(3.5); opacity: 0; }
+}
+
+/* ─── Border orbit (project card hover) ─── */
+@keyframes borderOrbit {
+  0%   { box-shadow: 0 -8px 20px -4px rgba(240,240,240,0.22), 0 12px 36px rgba(0,0,0,0.35); }
+  25%  { box-shadow: 8px 0  20px -4px rgba(240,240,240,0.22), 0 12px 36px rgba(0,0,0,0.35); }
+  50%  { box-shadow: 0  8px 20px -4px rgba(240,240,240,0.22), 0 12px 36px rgba(0,0,0,0.35); }
+  75%  { box-shadow: -8px 0 20px -4px rgba(240,240,240,0.22), 0 12px 36px rgba(0,0,0,0.35); }
+  100% { box-shadow: 0 -8px 20px -4px rgba(240,240,240,0.22), 0 12px 36px rgba(0,0,0,0.35); }
+}
+
+/* ─── Utility classes ─── */
+.animate-fadeIn  { animation: fadeIn  var(--transition-normal) both; }
+.animate-slideUp { animation: slideUp var(--transition-slow) both; }
+.animate-float   { animation: float 4s ease-in-out infinite; }
+.animate-pulse   { animation: pulse 2s ease-in-out infinite; }
+.animate-bounce  { animation: bounce 1.5s ease-in-out infinite; }
+.animate-glitch  { animation: glitch 0.4s steps(1) both; }
